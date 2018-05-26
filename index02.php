@@ -6,10 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<style>
+    .banco{
+        width: 640px;
+        margin: auto
+    }
+    .oco{
+        width: 80px;
+        height: 80px;
+        float: left
+    }
+    .trang{
+        background-color: #fff
+    }
+    .den{
+        background-color: #000
+    }
+</style>
 <body>
-    <div>
-        <h2>1234</h2>
-        <?php echo 2345?>
+    <div class="banco">
+        <div class="oco trang"></div>
+        <div class="oco den"></div>
+        <div class="oco trang"></div>
+        <div class="oco den"></div>
+        <div class="oco trang"></div>
+        <div class="oco den"></div>
+        <div class="oco trang"></div>
+        <div class="oco den"></div>
+        <div class="oco den"></div>
+        <div class="oco trang"></div>
+        <div class="oco den"></div>
+        <div class="oco trang"></div>
+        <div class="oco den"></div>
+        <div class="oco trang"></div>
+        <div class="oco den"></div>
+        <div class="oco trang"></div>
     </div>
 </body>
 </html>
