@@ -18,202 +18,38 @@
 // require 'data.php';
 require_once 'data.php';
 //print_r($arrSanpham);
+
+
+// foreach($arrSanpham as $sp){
+//     echo $sp['name'];
+//     echo "<br>";
+// }
+//echo number_format(25000);
+//echo number_format(25000,2);
+//echo number_format(25000,2,',','.');
+
 ?>
 
 <body>
     <div class="content">
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
+        <?php foreach($arrSanpham as $sp): ?>
+            <div class="item">
+                <div class="image">
+                    <img src="<?=$sp['image']?>" alt="<?=$sp['name']?>">
+                </div>
+                <div class="info">
+                    <h2><?=$sp['name']?></h2>
+                    <p>Giảm ngay 300.000đ </p>
+                    <p>Giảm ngay 300.000đ </p>
+                    <p class="promotion">Khuyến mãi </p>
+                    <p>Giảm ngay 300.000đ </p>
+                    <p>Giảm ngay 300.000đ </p>
+                    <p>Giảm ngay 300.000đ </p>                
+                </div>
+                <div class="name"><?=$sp['name']?></div>
+                <div class="price"> <?=number_format($sp['price'])?> đồng</div>
             </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png" alt="Samsung Galaxy J7 Pro">
-            </div>
-            <div class="info">
-                <h2>Samsung Galaxy J7 Pro</h2>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p class="promotion">Khuyến mãi </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>
-                <p>Giảm ngay 300.000đ </p>                
-            </div>
-            <div class="name">Samsung Galaxy J7 Pro</div>
-            <div class="price"> 6.000.000 đồng</div>
-        </div>
+        <?php endforeach?>
     </div>
 </body>
 </html>

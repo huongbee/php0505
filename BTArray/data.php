@@ -7,6 +7,11 @@ $arrSanpham = [
         'image'=>'https://cdn.tgdd.vn/Products/Images/42/92962/iphone-6-32gb-vang-400-400x460.png'
     ],
     [
+        'name'=>'iPhone 6 32GB',
+        'price'=>7490000,
+        'image'=>'https://cdn.tgdd.vn/Products/Images/42/92962/iphone-6-32gb-vang-400-400x460.png'
+    ],
+    [
         'name'=>'Samsung Galaxy J7 Pro',
         'price'=>6090000,
         'image'=>'https://cdn.tgdd.vn/Products/Images/42/103404/samsung-galaxy-j7-pro-2323-400x460.png'
