@@ -7,6 +7,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style07.css">
 </head>
+<?php
+
+//include 'data.php';
+//include 'data.php';
+
+// include_once 'data.php';
+// include_once 'data.php';
+
+// require 'data.php';
+require_once 'data.php';
+//print_r($arrSanpham);
+?>
+
 <body>
     <div class="content">
         <div class="item">
