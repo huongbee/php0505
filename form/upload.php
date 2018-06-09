@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="xuly-upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="image" multiple>
+    <form action="upload_multy.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="image[]" multiple>
         <button type="submit">Upload</button>
     </form>
 </body>
