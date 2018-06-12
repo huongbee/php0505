@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +18,11 @@
         <div class="row justify-content-center">
             <div class="col-6">
                 <h2 class="text-center">User Login</h2>
+                <?php if(isset($_SESSION['error'])):?>
+                <div class="alert alert-danger">
+                    <?=$_SESSION['error']; unset($_SESSION['error']);?>
+                </div>
+                <?php endif ?>
                 <form method="POST" action="xulylogin.php">
                     <div class="form-group">
                         <label for="username">Username</label>
@@ -25,7 +34,7 @@
                     </div>
                     <div class="form-group form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" name="remember">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <label class="form-check-label" for="exampleCheck1">Remember me?</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
