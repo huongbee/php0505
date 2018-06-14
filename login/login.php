@@ -33,7 +33,7 @@ session_start();
                         <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
                     </div>
                     <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="remember">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="remember" value="1">
                         <label class="form-check-label" for="exampleCheck1">Remember me?</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>

@@ -1,14 +1,33 @@
 <?php
 session_start();
-if(isset($_SESSION['username']) && isset($_SESSION['password'])){
-    if($_SESSION['username'] != "admin" || $_SESSION['password']!=md5(md5(111111).'my-key')){
+// if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+
+//     if($_SESSION['username'] != "admin" || $_SESSION['password']!=md5(md5(111111).'my-key')){
+//         $_SESSION['error'] = "Vui lòng đăng nhập";
+//         header('Location:login.php');
+//     }
+// }
+// elseif(!isset($_COOKIE['userID']) && $_COOKIE['userID'] != 'admin'){
+//     $_SESSION['error'] = "Vui lòng đăng nhập";
+//     header('Location:login.php');
+// }
+// else{
+//     $_SESSION['error'] = "Vui lòng đăng nhập";
+//     header('Location:login.php');
+// }
+if(!isset($_SESSION['username']) || !isset($_SESSION['password'])){
+    if(!isset($_COOKIE['userID']) || $_COOKIE['userID'] != 'admin'){
         $_SESSION['error'] = "Vui lòng đăng nhập";
         header('Location:login.php');
     }
+    else{
+        $_SESSION['username'] = $_COOKIE['userID'];
+        $_SESSION['password'] = $_COOKIE['userToken'];
+        //echo "use cookie";
+    }
 }
 else{
-    $_SESSION['error'] = "Vui lòng đăng nhập";
-    header('Location:login.php');
+    //echo "use session";
 }
 
 ?>
