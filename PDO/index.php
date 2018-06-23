@@ -46,9 +46,6 @@ try{
 
 
 
-    $un = "nguyenvana02";
-    $email = 'huong@gmail.com';
-    
     $sql = "UPDATE users SET username=? WHERE email=?";
     $stmt = $connect->prepare($sql);
     
